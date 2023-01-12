@@ -43,7 +43,7 @@ const Post = ({ post }: Props) => {
   };
 
   return (
-    <main>
+    <main className="pb-20">
       <Header />
       <Image
         src={urlFor(post.mainImage).url()!}
@@ -96,7 +96,9 @@ const Post = ({ post }: Props) => {
       <hr className="max-w-lg my-5 mx-auto border border-yellow-500" />
       {submitted ? (
         <div className="flex flex-col p-10 my-10 bg-yellow-500 text-white max-w-2xl mx-auto">
-          <h3 className="text-3xl font-bold">Thank you for submitting your comment!</h3>
+          <h3 className="text-3xl font-bold">
+            Thank you for submitting your comment!
+          </h3>
           <p>Once it has been approved, it will appear below!</p>
         </div>
       ) : (
@@ -159,6 +161,19 @@ const Post = ({ post }: Props) => {
           />
         </form>
       )}
+
+      <div className="flex flex-col p-10 my-10 max-w-2xl mx-auto shadow-yellow-500 shadow space-y-2">
+        <h3 className="text-4xl">Comments</h3>
+        <hr className="pb-2" />
+        {post.comments.map((comment) => (
+          <div key={comment._id}>
+            <p>
+              <span className="text-yellow-500">{comment.name}: </span>
+              {comment.comment}
+            </p>
+          </div>
+        ))}
+      </div>
     </main>
   );
 };
