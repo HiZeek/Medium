@@ -10,6 +10,7 @@ const nextConfig = {
         hostname: "cdn.sanity.io",
       },
     ],
+    formats: ['image/png', 'image/webp', 'image/avif'],
     minimumCacheTTL: 1500000,
   },
 }
@@ -18,14 +19,7 @@ module.exports = nextConfig
 
 // module.exports = {
 //   images: {
-//     remotePatterns: [
-//       {
-//         protocol: 'https',
-//         hostname: 'sanity.io',
-//         port: '',
-//         pathname: '/images/**',
-//       },
-//     ],
+//     loader: 'custom',
+//     loaderFile: './my/image/loader.js',
 //   },
 // }
-// http://localhost:3000/(https://cdn.sanity.io/images/169omu8q/production/b54450adce03e233d39e9eb0260ad8550775626f-512x512.png)
