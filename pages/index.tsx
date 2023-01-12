@@ -35,7 +35,7 @@ export default function Home({ posts }: Props) {
         </div>
         <Image
           className="hidden md:inline-flex"
-          src="/assets/m.png"
+          src="/assets/bigm.png"
           width={300}
           height={300}
           alt="M"
