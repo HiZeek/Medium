@@ -10,8 +10,8 @@ const nextConfig = {
         hostname: "cdn.sanity.io",
       },
     ],
-    formats: ['image/avif', 'image/png'],
     minimumCacheTTL: 1500000,
+    formats: ['image/avif', 'image/png'],
   },
 }
 
