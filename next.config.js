@@ -11,7 +11,6 @@ const nextConfig = {
       },
     ],
     minimumCacheTTL: 1500000,
-    formats: ['image/avif', 'image/png'],
   },
 }
 
