@@ -33,14 +33,13 @@ export default function Home({ posts }: Props) {
             connect with millions of readers
           </h2>
         </div>
-        {/* <Image
+        <Image
           className="hidden md:inline-flex"
           src="/assets/m.png"
           width={300}
           height={300}
           alt="M"
-        /> */}
-        <img src="/assets/m.png" alt="M" className="hidden md:inline-flex h-[300px] w-[300px]" />
+        />
       </div>
       {/* Post */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 md:p-6">
